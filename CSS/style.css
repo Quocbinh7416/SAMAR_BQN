@@ -818,6 +818,17 @@ section.services{
     opacity: 0;
     transition: all 0.7s;
 }
+/* hover  */
+.brand__item:hover .brand__bg{
+    opacity: 1;
+}
+.brand__item:hover .logo__main{
+    opacity: 0;
+}
+.brand__item:hover .logo__hover{
+    z-index: 2;
+}
+
 /* footer  */
 footer{
     background-image: url(../img/bg4.png);
@@ -861,19 +872,116 @@ footer{
     font-weight: 700;
     color: #262626;
 }
-
-
-/* hover  */
-.brand__item:hover .brand__bg{
-    opacity: 1;
+.footer__top .footer__TopEmail{
+    width: 50%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
-.brand__item:hover .logo__main{
+.footer__TopEmail form{
+    height: 100%;
+    width: 100%;
+}
+.footer__TopEmail .form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+.footer__TopEmail input{
+    padding: 10px 20px;
+    background: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: 1px solid white;
+    box-shadow: 0 0 1px rgb(0, 0, 0, 0.5)
+}
+.input__border{
+    border: 1px solid #f55f8d;
+    border-radius: 0.5rem 0 0 0.5rem;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
+    transition: all 0.5s;
 }
-.brand__item:hover .logo__hover{
-    z-index: 2;
+.form:hover .input__border{
+    opacity: 1;
+    
 }
+.footer__TopEmail .button{
+    overflow: hidden;
+    border-radius: 0 0.5rem 0.5rem 0;
+    height: 65px;
+}
+.footer__TopEmail button{
+    height: 100%;
+    width: 90px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 20px 20px;
+    text-align: center;
+}
+.footer__TopEmail .button i{
+    color: white;
+    font-size: 24px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+}
+.footer__mid{
+    padding: 70px 0;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% repeat(3, 1fr);
+    gap: 10px;
+    color: white;
+}
+.footer__mid .footer__MidItem{
+    
+}
+.footer__mid .midItem1 li{
+    list-style: none;
+    display: flex;
+    justify-content:;
+    align-items: center;
+    padding: 5px 0;
+    
+}
+.footer__mid .midItem1 .icon{
+    border-radius: 50%;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.footer__mid .midItem1 i{
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.footer__mid .midItem1 span{
+    display: inline-block;
 
+}
+.footer__mid span{
+    opacity: 0.6;
+}
 
 /* background: linear-gradient(to right,#f55f8d 0,#f8ae56 100%); */
 
