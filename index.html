@@ -15,9 +15,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- LIGHTGALLERY -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.3/css/lightgallery-bundle.min.css">
-    <!-- SLICK  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SWIPERJS  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- MAIN CSS  -->
     <link rel="stylesheet" href="./CSS/style.css">
@@ -424,33 +424,63 @@
                 <h1>What Our Clients Say’s</h1>
             </div>
             <div class="test__content">
-                <div class="test__image">
-                    <div class="image">
-                        <img src="./img/pic1_4.jpg" alt="">  
-                        <div class="shape">
-
+                <div thumbsSlider="" class="swiper-container swiper swiper-click testimonial-thumbs">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                        <div class="swiper-slide test__image">
+                            <div class="image">
+                            <img src="./img/pic1_4.jpg" alt="">  
+                            <div class="shape">
+                            </div>
+                            </div>
                         </div>
+                        <div class="swiper-slide test__image">
+                            <div class="image">
+                                <img src="./img/pic2_3.jpg" alt="">  
+                            </div>
+                        </div>
+                        <div class="swiper-slide test__image">
+                            <div class="image">
+                                <img src="./img/pic3_3.jpg" alt="">   
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
-                    <div class="image">
-                        <img src="./img/pic2_3.jpg" alt="">  
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                  </div>
+                <div class="swiper-container swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="text1">
+                                <h3>Cak Dikin</h3>
+                                <p>CEO & Founder</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum distinctio, delectus architecto, laborum dolores quisquam praesentium, adipisci nisi iste nam iusto soluta officiis sapiente ad corrupti quas amet reprehenderit!</p>
+                                <div class="icon">
+                                    <i class="fas fa-quote-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text1">
+                                <h3>Cak Dikin</h3>
+                                <p>CEO & Founder</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum distinctio, delectus architecto, laborum dolores quisquam praesentium, adipisci nisi iste nam iusto soluta officiis sapiente ad corrupti quas amet reprehenderit!</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="text1">
+                                <h3>Cak Dikin</h3>
+                                <p>CEO & Founder</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum distinctio, delectus architecto, laborum dolores quisquam praesentium, adipisci nisi iste nam iusto soluta officiis sapiente ad corrupti quas amet reprehenderit!</p>
+                            </div>
+                        </div> 
                     </div>
-                    <div class="image">
-                        <img src="./img/pic3_3.jpg" alt="">   
-                    </div>
-                </div> 
-                <div class="test__text">
-                    <div class="text1">
-                        <h3>Cak Dikin</h3>
-                        <p>CEO & Founder</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum distinctio, delectus architecto, laborum dolores quisquam praesentium, adipisci nisi iste nam iusto soluta officiis sapiente ad corrupti quas amet reprehenderit!</p>
-                    </div>
-                    <div class="text1">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum distinctio, delectus architecto, laborum dolores quisquam praesentium, adipisci nisi iste nam iusto soluta officiis sapiente ad corrupti quas amet reprehenderit!</p>
-                    </div>
-                    <div class="text1">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum distinctio, delectus architecto, laborum dolores quisquam praesentium, adipisci nisi iste nam iusto soluta officiis sapiente ad corrupti quas amet reprehenderit!</p>
-                    </div>
+                    <div class="swiper-pagination1"></div>
                 </div>
+                
             </div>
         </div>
     </section>
@@ -461,87 +491,93 @@
                 <h1>Latest News & Blog</h1>
             </div>
             <div class="blog__content">
-                <div class="blog__item">
-                    <div class="itemtop">
-                        <img src="./img/pic1_1.jpg" alt="">
-                        <div class="time">
-                            <span>25 MARCH 2021</span>
+                <!-- swiper  -->
+                <div class="swiper-container swiper3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide blog__item">
+                        <div class="itemtop">
+                            <img src="./img/pic1_1.jpg" alt="">
+                            <div class="time">
+                                <span>25 MARCH 2021</span>
+                            </div>
+                        </div>
+                        <div class="itemmid">
+                            <h4><a class="pinkTran" href="#">Maecenas maximus augue eget libero dictum.</a></h4>
+                            <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                        </div>
+                        <div class="itembot">
+                            <ul>
+                                <li>
+                                    <i class="far fa-user-circle"></i>
+                                    By
+                                    <a class="pink" href="#">Johne Doe</a> 
+                                </li>
+                                <li>
+                                    <i class="far fa-comment-alt"></i>
+                                    <a href="#">Comment
+                                        <span>15</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                        <div class="swiper-slide blog__item">
+                            <div class="itemtop">
+                                <img src="./img/pic2.jpg" alt="">
+                                <div class="time">
+                                    <span>28 JUNE 2021</span>
+                                </div>
+                            </div>
+                            <div class="itemmid">
+                                <h4><a class="pinkTran" href="#">Maecenas maximus augue eget libero dictum.</a></h4>
+                                <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            </div>
+                            <div class="itembot">
+                                <ul>
+                                    <li>
+                                        <i class="far fa-user-circle"></i>
+                                        By
+                                        <a class="pink" href="#">Johne Doe</a> 
+                                    </li>
+                                    <li>
+                                        <i class="far fa-comment-alt"></i>
+                                        <a href="#">Comment
+                                            <span>15</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="swiper-slide blog__item">
+                            <div class="itemtop">
+                                <img src="./img/pic3.jpg" alt="">
+                                <div class="time">
+                                    <span>28 JUNE 2021</span>
+                                </div>
+                            </div>
+                            <div class="itemmid">
+                                <h4><a class="pinkTran" href="#">Maecenas maximus augue eget libero dictum.</a></h4>
+                                <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
+                            </div>
+                            <div class="itembot">
+                                <ul>
+                                    <li>
+                                        <i class="far fa-user-circle"></i>
+                                        By
+                                        <a class="pink" href="#">Johne Doe</a> 
+                                    </li>
+                                    <li>
+                                        <i class="far fa-comment-alt"></i>
+                                        <a href="#">Comment
+                                            <span>15</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="itemmid">
-                        <h4><a class="pinkTran" href="#">Maecenas maximus augue eget libero dictum.</a></h4>
-                        <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
-                    </div>
-                    <div class="itembot">
-                        <ul>
-                            <li>
-                                <i class="far fa-user-circle"></i>
-                                By
-                                <a class="pink" href="#">Johne Doe</a> 
-                            </li>
-                            <li>
-                                <i class="far fa-comment-alt"></i>
-                                <a href="#">Comment
-                                    <span>15</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="blog__item">
-                    <div class="itemtop">
-                        <img src="./img/pic2.jpg" alt="">
-                        <div class="time">
-                            <span>28 JUNE 2021</span>
-                        </div>
-                    </div>
-                    <div class="itemmid">
-                        <h4><a class="pinkTran" href="#">Maecenas maximus augue eget libero dictum.</a></h4>
-                        <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
-                    </div>
-                    <div class="itembot">
-                        <ul>
-                            <li>
-                                <i class="far fa-user-circle"></i>
-                                By
-                                <a class="pink" href="#">Johne Doe</a> 
-                            </li>
-                            <li>
-                                <i class="far fa-comment-alt"></i>
-                                <a href="#">Comment
-                                    <span>15</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="blog__item">
-                    <div class="itemtop">
-                        <img src="./img/pic3.jpg" alt="">
-                        <div class="time">
-                            <span>28 JUNE 2021</span>
-                        </div>
-                    </div>
-                    <div class="itemmid">
-                        <h4><a class="pinkTran" href="#">Maecenas maximus augue eget libero dictum.</a></h4>
-                        <p>Nunc convallis sagittis dui eu dictum. Cras sodales id ipsum ac aliquam. Phasellus justo quam.</p>
-                    </div>
-                    <div class="itembot">
-                        <ul>
-                            <li>
-                                <i class="far fa-user-circle"></i>
-                                By
-                                <a class="pink" href="#">Johne Doe</a> 
-                            </li>
-                            <li>
-                                <i class="far fa-comment-alt"></i>
-                                <a href="#">Comment
-                                    <span>15</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                </div>             
+           
             </div>
         </div>
     </section>
@@ -697,31 +733,40 @@
         exThumbImage:'data-exthumbimage'
 });
     </script>
-    <!-- SLICK -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <Script>
-        $('.test__text').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.test__image'
-        });
-        $('.test__image').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.test__text',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
-        });
-    </Script>
+    <!-- SWIPER -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        $('.blog__content').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-    });
+         var swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        });
+       
+        // swiper1 for test1
+        var swiper = new Swiper('.swiper1', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 1,
+        pagination: {
+                el: '.swiper-pagination1',
+               clickable: true,
+            },
+        // autoplay: {
+        //     delay: 1000,
+        //     },
+        });
+    </script>
+    <script>
+        // swiper3 for blog 
+        var swiper = new Swiper('.swiper3', {
+        // Optional parameters
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 20,
+        autoplay: {
+            delay: 5000,
+            },
+        });
     </script>
 </body>
 </html>
